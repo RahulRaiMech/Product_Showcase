@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AR Product Viewer</title>
+  <title>TechVibe Studio - AR Product Viewer</title>
   
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   
@@ -34,7 +34,7 @@
     /* Shared styling for custom buttons */
     .custom-btn {
       position: absolute;
-      top: 30px; /* Changed from bottom: 30px to top: 30px */
+      top: 30px;
       padding: 12px 24px;
       font-size: 16px;
       font-weight: bold;
@@ -59,19 +59,14 @@
       left: 30px;
       background-color: #6c757d; /* Gray */
     }
-
-    /* Hide the AR button if the device/browser doesn't support AR */
-    model-viewer[ar-status="not-presenting"] .btn-ar {
-      display: block;
-    }
   </style>
 </head>
 <body>
 
   <model-viewer id="product-viewer"
     src="Coimbatore_Public_School.glb"
-    ios-src="product.usdz"
-    alt="A 3D model of our product"
+    ios-src="Coimbatore_Public_School.usdz"
+    alt="A 3D model of Coimbatore Public School"
     ar
     ar-modes="webxr scene-viewer quick-look"
     ar-placement="floor"
