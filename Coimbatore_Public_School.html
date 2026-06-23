@@ -27,7 +27,7 @@
     }
 
     /* Hide the reset button when AR is active */
-    model-viewer[ar-status="presenting"] .btn-reset {
+    model-viewer:not([ar-status="not-presenting"]) .btn-reset {
       display: none;
     }
 
