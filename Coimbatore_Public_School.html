@@ -29,7 +29,7 @@
     /* Shared styling for custom buttons */
     .custom-btn {
       position: absolute;
-      bottom: 30px;
+      top: 30px; /* Changed from bottom: 30px to top: 30px */
       padding: 12px 24px;
       font-size: 16px;
       font-weight: bold;
@@ -69,6 +69,8 @@
     alt="A 3D model of our product"
     ar
     ar-modes="webxr scene-viewer quick-look"
+    ar-placement="floor"
+    ar-scale="auto"
     camera-controls
     auto-rotate>
     
@@ -83,7 +85,7 @@
   </model-viewer>
 
   <script>
-    const viewer = document.getElementById('-viewer');
+    const viewer = document.getElementById('product-viewer');
     const resetBtn = document.getElementById('reset-btn');
 
     resetBtn.addEventListener('click', () => {
